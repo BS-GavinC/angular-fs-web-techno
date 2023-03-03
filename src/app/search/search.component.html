@@ -1,0 +1,15 @@
+<button (click)="searchPikachu()">Search Pika pika</button>
+
+<br>
+
+<p>{{monMessage}}</p>
+
+<br>
+
+<div *ngIf="monPokemon">
+  <h4>{{monPokemon.name}}</h4>
+  <p>Taille : {{monPokemon.height}} cm</p>
+  <p>Poids : {{monPokemon.weight}} Kg</p>
+  <p>numero : {{monPokemon.id}}</p>
+  <p>Experience : {{monPokemon.base_experience}} XP</p>
+</div>
